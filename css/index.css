@@ -1,0 +1,115 @@
+*{
+    
+    margin: auto;
+}
+
+body{
+    background-image: url(/images/lunges.jpg);
+
+    background-size: 1536px;
+    background-repeat: no-repeat;
+}
+.main_body_1{
+   
+}
+.gym_name{
+    font-family: 'Bungee';
+    height: 60px;
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nav_bar{
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    color:aliceblue
+
+}
+.nav_items{
+    display: inline;
+color: aliceblue;    
+}
+
+.nav_buttons{
+    height: 30px;
+
+}
+
+.logo_div{
+    font-size: 30px;
+}
+
+.nav_items_inside{
+    font-family: 'Economica';
+    color: aliceblue;
+    text-decoration: none;
+    padding: 2px 2px 2px 2px;
+    margin-left: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    
+}
+
+.u_list{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.nav_items_inside:hover{
+border-radius: 3px;
+padding: 2px 2px 2px 2px;
+    background-color:yellow ;
+    color:black;
+}
+hr{
+    color: white;
+    width: 100px;
+}
+
+.quote_div{
+    background-color: rgba(0, 0, 0, 0.767);
+    
+    height: 500px;
+    width: 400px;
+    float: left;
+    padding: 60px 0px 0px 40px ;
+    
+}
+.quote{
+    font-family: 'Economica';
+    text-transform: uppercase;
+    font-size: 80px;
+    color: white;;
+}
+
+.social_media{
+    float: right;
+    background-color: rgba(255, 255, 255, 0.486);
+    border-radius: 3px;
+}
+.sm_buttons{
+    list-style: none;
+    padding: 0px;
+}
+.sm_box{
+    padding: 4px 4px 4px 4px;
+}
+
+.join_box{
+    margin-top: 560px;
+    height: 150px;
+    background-color: black;
+}
+.join_box_t1 , .join_box_t2{
+    font-family: 'Economica';
+    text-transform: uppercase;
+    color: aliceblue;
+    
+}
+
+.join_box_t1{
+    font-size: 60px;
+}
+.join_box_t2{
+    font-size: 20px;
+
+}
