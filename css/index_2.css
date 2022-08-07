@@ -19,16 +19,17 @@ body{
 }
 
 .nav_bar{
-    background-size: 1500px;
+    width: 100%;
     /* height: 100px; */
-    background-color: black;
-    /* background-image: url('https://wallpaperaccess.com/full/2065695.jpg'); */
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.481);
+    position: fixed;
+    z-index: 1;
 }
 
 
 
 .u_list{
+    display: inline;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -39,7 +40,7 @@ color: aliceblue;
 }
 
 .nav_buttons{
-    width: fit-content;
+    width: 400px;
     height: 30px;
     float: right;
     padding-left: 850px;
@@ -77,22 +78,24 @@ color: aliceblue;
 
 }
 
+/* quote css */
 .Q_div{ 
     background-repeat: no-repeat;
     background-size: 1540px;
     /* background-image: url('/images/c_pic.jpg'); */
-    height: 510px;
+    height: 620px;
     width: auto;
     background-color: black;
 } 
 .bg_video{
-    /* width: 100%; */
+    width: 100%;
     
     position: absolute;
 }
 
 .quote{
-    
+    padding-top: 100px;
+    padding-bottom: 50px;
     font-family: 'Economica';
     text-transform: uppercase;
     font-size: 40px;
@@ -109,8 +112,14 @@ color: aliceblue;
     background-color: rgba(0, 0, 0, 0.518);
 }
 .join_button{
-    border: 5px;
-    color: red;
+    border:5px 5px 5px 5px;
+    border-radius: 42px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: tomato;
+    background-color: rgba(0, 0, 0, 0.359);
     text-decoration: none;
     font-family: 'Economica';
     text-transform: uppercase;
@@ -118,4 +127,82 @@ color: aliceblue;
     color: white;
     margin: auto;
 
+}
+.join_button_link{
+    text-decoration: none;
+    color: white;
+}
+
+/* workout infos */
+.workout_plans_div{
+    position: absolute;
+    /* z-index: ; */
+    width: 1519px;
+    height: 620px;
+    background-color:rgb(26, 26, 26);
+}
+.wk_title{
+    
+    font-family: 'Economica';
+    text-transform: uppercase;
+    font-size: 50px;
+    color: aliceblue;
+    margin-top:30px ;
+    margin-bottom:10px ;
+
+
+}
+
+.inner_wk_div{
+    padding: 50px;
+}
+.workouts_home{
+    width: 400px;
+    height:300px ;
+    border-radius: 30px;
+}
+.workouts_data_td{
+    padding-left: 50px;
+}
+
+
+
+
+.wk_titles_names{
+    font-family: 'Economica';
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    margin: 8px;
+    
+
+}
+
+.wk_title_link_text{
+    font-family: 'Economica';
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    margin: 8px;
+
+}
+
+.lets_go_button{
+    border:5px 5px 5px 5px;
+    border-radius: 42px;
+    padding: 5px 10px 5px 10px;
+    
+    border-color: tomato;
+    background-color: rgba(0, 0, 0, 0.359);
+    text-decoration: none;
+    font-family: 'Economica';
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    margin: auto;
+
+}
+.lets_go_link{
+    text-decoration: none;
+    color: white;
 }
