@@ -50,13 +50,12 @@ body {
 }
 
 .nav_items_inside {
-  font-family: "Economica";
+  font-family: 'Poppins', sans-serif;
   color: aliceblue;
   text-decoration: none;
   padding: 2px 2px 2px 2px;
-  margin-left: 5px;
+  margin-left: 15px;
   font-size: 22px;
-  text-transform: capitalize;
 }
 
 .nav_items_inside:hover {
@@ -88,21 +87,21 @@ body {
 
 .quote {
   padding-top: 15%;
-
-  font-family: "Staatliches", cursive;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  font-size: 100px;
-  font-weight: 300;
+  font-size: 85px;
+  font-weight: 400;
   color: white;
-  margin: auto;
+  margin-bottom: 5%;
+  text-shadow: 3px 3px 7px black;
 }
 .Q_para {
   margin-top: 3%;
   margin-right: 25%;
   margin-left: 25%;
-  font-weight: lighter;
-  font-size: 2em;
-  font-family: "Staatliches";
+  font-weight: 200;
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
   color: white;
 }
 .Quote_div {
@@ -123,21 +122,26 @@ body {
   margin-top: 1%;
 }
 .head_text {
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   color: black;
   text-transform: uppercase;
-  font-family: "Staatliches", cursive;
+  font-family: 'Poppins', sans-serif;
+  
 }
 .head_hr {
-  width: 12em;
-  background-color: crimson;
-  height: 4px;
+  border: 1px solid red;
+  width: 25%;
+  background-color: red;
+  height: 1px;
+  margin-bottom: 2%;
 }
 #head_text_1 {
   font-size: 5em;
+  font-weight: 800;
 }
 #head_text_2 {
   font-size: 3em;
+  font-weight: 600;
 }
 
 .book_now_para {
@@ -145,23 +149,23 @@ body {
   margin: 2%;
 }
 .bn_para {
-  font-weight: lighter;
   font-size: 20px;
-  font-family: "Staatliches";
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 .join_button {
   border: 3px;
   border-radius: 10px;
-  padding: 5px 10px 5px 10px;
+  padding: 9px 25px;
   border-color: rgb(255, 255, 255);
   background-color: orangered;
 
-  font-family: "Staatliches";
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 30px;
   color: white;
-  margin: auto;
 }
 .join_button:hover {
   background-color: yellow;
@@ -185,16 +189,17 @@ body {
 
 .class_head_text_1 {
   font-size: 6em;
-
-  font-family: "Staatliches";
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 .class_head_text_2 {
-  font-size: 3em;
-  font-family: "Staatliches";
-  text-transform: uppercase;
-  color: orangered;
+  font-size: 2em;
+  font-family: 'Poppins', sans-serif;
+  /* text-transform: uppercase; */
+  color: white;
+  margin-bottom: 1.5%;
 }
 
 .classes_tabs {
@@ -207,23 +212,28 @@ body {
   padding-right: 1rem;
 }
 .classes_names {
+  margin-top: 1%;
+  margin-bottom: 5%;
   font-size: 2em;
-  font-family: "Staatliches";
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   color: white;
 }
 .explore_button {
   border: 3px;
   border-radius: 10px;
-  padding: 5px 10px 5px 10px;
-  border-color: rgb(255, 255, 255);
+  padding: 7px 15px;
+  border-color: white;
   background-color: orangered;
 
-  font-family: "Staatliches";
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 23px;
   color: white;
-  margin: auto;
+
+  margin-bottom: 25px;
 }
 .explore_button:hover {
   background-color: yellow;
