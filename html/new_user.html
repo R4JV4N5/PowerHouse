@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New User</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Economica&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Economica&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/new_user.css" />
+
+    <script type="text/javascript" src="/javacript/new_user.js">
+    </script>
+  </head>
+  <body>
+    <div class="nav_bar">
+      <table style="width: 100%">
+        <tr>
+          <td>
+            <div>
+              <h3 class="m_logo">PowerHouse</h3>
+            </div>
+          </td>
+          <td>
+            <div class="nav_buttons">
+              <ul class="u_list">
+                <li class="nav_items">
+                  <a class="nav_items_inside" href="">classes </a>
+                </li>
+                <li class="nav_items">
+                  <a class="nav_items_inside" href="">membership Options </a>
+                </li>
+                <li class="nav_items">
+                  <a class="nav_items_inside" href="">blogs </a>
+                </li>
+                <li class="nav_items">
+                  <a class="nav_items_inside" href="">about us</a>
+                </li>
+                <li class="nav_items">
+                  <div class="dropdown">
+                    <a class="dropbtn">Options</a>
+                    <div class="dropdown-content">
+                      <a href="#">Add Member</a>
+                      <a href="#">check-in-out</a>
+                      <a href="#">Users List</a>
+                      <!-- <a href="#">user Activities</a> -->
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <center>
+      <div class="form_div">
+        <table>
+          <tr>
+            <td width="40%">
+              <div class="left_quote">
+                <p>Journey of new warrior begins</p>
+              </div>
+            </td>
+            <td width="60%">
+              <div class="add_user_form">
+                <center>
+                  <p>Add User</p>
+                  <hr width="100%" />
+                  <form
+                    onsubmit="return validate();"
+                    action="/index.html"
+                    method="post"
+                  >
+                    <table>
+                      <tr>
+                        <td>
+                          <p>First Name:</p>
+                          <input
+                            type="text"
+                            name="FirstName"
+                            placeholder="FirstName"
+                            id="fname"
+                          />
+                        </td>
+                        <td>
+                          <p>Last Name:</p>
+                          <input
+                            type="text"
+                            name="LastName"
+                            placeholder="LastName"
+                            id="lname"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>Ph-number</p>
+                          <input type="number" name="PhNumber" id="Phno" />
+                        </td>
+                        <td>
+                          <p>Age</p>
+                          <input type="number" name="age" id="age" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>Email</p>
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            id="email"
+                          />
+                        </td>
+                        <td>
+                          <p>Gender</p>
+                          <input
+                            type="radio"
+                            style="width: 1.5em"
+                            name="gender"
+                            value="male"
+                          /><span>Male</span>
+                          <input
+                            type="radio"
+                            style="width: 1.5em"
+                            name="gender"
+                            value="female"
+                          /><span>Female</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>Password</p>
+                          <input type="password" name="password" id="pwd_1" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>Confirm Password</p>
+                          <input type="password" name="password" id="pwd_2" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input
+                            type="checkbox"
+                            style="width: 1.5em"
+                            name="show_pass"
+                            id="show_pass"
+                          /><span> Show Password</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <center>
+                      <input
+                        class="submit_button"
+                        type="submit"
+                        value="Add Member"
+                      />
+                    </center>
+                  </form>
+                </center>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+  </body>
+</html>
