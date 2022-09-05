@@ -16,12 +16,12 @@ function validate(){
     else if(phnum.value.length>10 || phnum.value.length<10){
         alert("num bank");
         phnum.style.border="solid 3px red";
-        return false;
+        return false
 
     }
     else{
         alert(phnum);
-        return true;
+        return true
     }
 
 

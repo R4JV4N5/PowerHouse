@@ -115,10 +115,12 @@ body {
 
 /* book now div */
 .book_now_div {
+  background-repeat: no-repeat;
   background-color: white;
   text-align: center;
   margin: 5%;
 }
+
 .head_text_div {
   margin-top: 1%;
 }
