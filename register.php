@@ -22,12 +22,9 @@
 			
 			echo "Registration successful";
 			echo "<br>";
-			echo "
-			<a href='new_user.html'> CLick here to continue</a>
-			";
-			
 			$stmt->close();
 			$conn->close();
 		}
 	}
 ?>
+<meta http-equiv = "refresh" content = "2; url = http://localhost/PowerHouse/new_user.html" />

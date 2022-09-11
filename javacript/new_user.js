@@ -8,7 +8,6 @@ function validate(){
     var password_1=document.getElementById("pwd_1")
     var password_2=document.getElementById("pwd_2")
 
-
     if(firstname.value.trim()=="" || lastname.value.trim()==""){
         alert("fields blank");
         return false

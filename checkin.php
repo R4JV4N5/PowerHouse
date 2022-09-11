@@ -9,8 +9,8 @@
 		} else {
 			$query = "insert into check_in (user_id) values('$userid')";
 			$data = mysqli_query($conn, $query);
-			echo "Registration successful";
-			echo "<br>";
+			// echo "Registration successful";
+			// echo "<br>";
 		}
 	}
 	
@@ -21,9 +21,8 @@
 		} else {
 			$query= "delete from check_in where user_id = '$userid'";
 			$data = mysqli_query($conn, $query);
-			// echo $execval;
-			echo "deletion successful";
-			echo "<br>";
+			// echo "deletion successful";
+			// echo "<br>";
 		}
 	}
 ?>

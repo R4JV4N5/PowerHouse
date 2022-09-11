@@ -12,12 +12,20 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="css/new_user.css" />
 
-  <!-- <script type="text/javascript" src="/javacript/new_user.js">
+  <!-- <script>
+        function show_pass() {
+        var x = document.getElementById("show_pass");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
   </script> -->
 </head>
 
 
-<body style= "background-image: url('images/add_user_bg.jpg');">
+<body style="background-image: url('images/add_user_bg.jpg');">
   <div class="nav_bar">
     <table style="width: 100%">
       <tr>
@@ -118,15 +126,15 @@
                         <input type="password" name="c_password" id="pwd_2" />
                       </td>
                     </tr>
-                    <!-- <tr>
+                    <tr>
                       <td>
-                        <input type="checkbox" style="width: 1.5em" name="show_pass" id="show_pass" /><span> Show
+                        <input type="checkbox" style="width: 1.5em" name="show_pass" id="show_pass" onclick="show_pass()"/><span> Show
                           Password</span>
                       </td>
-                    </tr> -->
+                    </tr>
                   </table>
                   <center>
-                    <input class="submit_button" type="submit" value="Add Member" name="submit"/>
+                    <input class="submit_button" type="submit" value="Add Member" name="submit" />
                   </center>
                 </form>
               </center>
