@@ -5,7 +5,7 @@ body {
   background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
   color: #333333;
-  background-image: url("/images/gym.png");
+  background-image: url("images/gym.png");
 }
 
 .box-form {
@@ -37,7 +37,7 @@ body {
   color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/images/dumbess.jpg");
+  background-image: url("images/dumbess.jpg");
   overflow: hidden;
 }
 .box-form .left .overlay {

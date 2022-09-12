@@ -3,6 +3,11 @@
         <title>Gym User List</title>
         <link rel="stylesheet" href="css/new_user.css" />
         <style>
+            table.main{
+                margin-left: auto; 
+                margin-right: auto;
+                margin-top: 5%;
+            }
             th{
                 padding: 15px;
             }
@@ -12,13 +17,13 @@
             .del-btn{
                 padding: 10px 15px;
                 color: white;
-                border-radius: 4px;
+                border-radius: 6px;
                 background-color: #f44336;
             }
             .up-btn{
                 padding: 10px 15px;
                 color: white;
-                border-radius: 4px;
+                border-radius: 6px;
                 background-color: #008CBA;
             }
             a{
@@ -31,43 +36,43 @@
             <table style="width: 100%">
             <tr>
                 <td>
-                <div>
-                    <h3 class="m_logo">PowerHouse</h3>
-                </div>
+                    <div>
+                        <h3 class="m_logo">PowerHouse</h3>
+                    </div>
                 </td>
                 <td>
-                <div class="nav_buttons">
-                    <ul class="u_list">
-                    <li class="nav_items">
-                        <a class="nav_items_inside" href="">Classes </a>
-                    </li>
-                    <li class="nav_items">
-                        <a class="nav_items_inside" href="">Membership Options </a>
-                    </li>
-                    <li class="nav_items">
-                        <a class="nav_items_inside" href="">Blogs </a>
-                    </li>
-                    <li class="nav_items">
-                        <a class="nav_items_inside" href="">About us</a>
-                    </li>
-                    <li class="nav_items">
-                        <div class="dropdown">
-                        <a class="dropbtn">Options</a>
-                        <div class="dropdown-content">
-                            <a href="new_user.html">Add Member</a>
-                            <a href="checkin.html">check-in-out</a>
-                            <a href="userlist.php">Users List</a>
-                            <!-- <a href="#">user Activities</a> -->
-                        </div>
-                        </div>
-                    </li>
-                    </ul>
-                </div>
+                    <div class="nav_buttons">
+                        <ul class="u_list">
+                            <li class="nav_items">
+                                <a class="nav_items_inside" href="">Classes </a>
+                            </li>
+                            <li class="nav_items">
+                                <a class="nav_items_inside" href="">Membership Options </a>
+                            </li>
+                            <li class="nav_items">
+                                <a class="nav_items_inside" href="">Blogs </a>
+                            </li>
+                            <li class="nav_items">
+                                <a class="nav_items_inside" href="">About us</a>
+                            </li>
+                            <li class="nav_items">
+                                <div class="dropdown">
+                                    <a class="dropbtn">Options</a>
+                                        <div class="dropdown-content">
+                                            <a href="new_user.html">Add Member</a>
+                                            <a href="checkin.html">check-in-out</a>
+                                            <a href="userlist.php">Users List</a>
+                                            <!-- <a href="#">user Activities</a> -->
+                                        </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </td>
             </tr>
             </table>
         </div>
-        <table border= '2'>
+        <table class='main' border= '2'>
                 <tr>
                     <th>First Name</th>
                     <th>Last Name</th>
@@ -97,5 +102,6 @@ while($result = mysqli_fetch_assoc($data)){
         <td><a href = '' class = 'up-btn'>Update</a></td>
         <td><a href = '' class = 'del-btn'>Delete</a></td>
     </tr>";
+    // echo $total;
 }
 ?>
