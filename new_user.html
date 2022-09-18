@@ -43,9 +43,9 @@
               <li class="nav_items">
                 <a class="nav_items_inside" href="member.html">Membership Options </a>
               </li>
-              <li class="nav_items">
+              <!-- <li class="nav_items">
                 <a class="nav_items_inside" href="">Blogs </a>
-              </li>
+              </li> -->
               <li class="nav_items">
                 <a class="nav_items_inside" href="">About us</a>
               </li>
@@ -54,7 +54,7 @@
                   <a class="dropbtn">Options</a>
                   <div class="dropdown-content">
                     <a href="#">Add Member</a>
-                    <a href="checkin.html">check-in-out</a>
+                    <a href="checkin.html">Check-In-Out</a>
                     <a href="userlist.php">Users List</a>
                     <!-- <a href="#">user Activities</a> -->
                   </div>
@@ -79,51 +79,51 @@
           <td width="60%">
             <div class="add_user_form">
               <center>
-                <p class="add_u">Add User</p>
+                <p class="add_u" style="font-weight: 800;">ADD MEMBER</p>
                 <hr width="100%" />
                 <form onsubmit="return validate();" action="register.php" method="post">
                   <table>
                     <tr>
                       <td>
                         <p>First Name:</p>
-                        <input type="text" name="fname" placeholder="FirstName" id="fname" />
+                        <input type="text" name="fname" placeholder="Enter First Name" id="fname" />
                       </td>
                       <td>
                         <p>Last Name:</p>
-                        <input type="text" name="lname" placeholder="LastName" id="lname" />
+                        <input type="text" name="lname" placeholder="Enter Last Name" id="lname" />
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p>Ph-number</p>
-                        <input type="number" name="phno" id="Phno" />
+                        <p>Phone number:</p>
+                        <input type="number" name="phno" id="Phno" placeholder="Enter Phone Number" />
                       </td>
                       <td>
-                        <p>Age</p>
-                        <input type="number" name="age" id="age" />
+                        <p>Age:</p>
+                        <input type="number" name="age" id="age" placeholder="Enter Age"/>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p>Email</p>
-                        <input type="email" name="email" placeholder="Email" id="email" />
+                        <p>Email:</p>
+                        <input type="email" name="email" placeholder="Enter Email Id" id="email" />
                       </td>
                       <td>
-                        <p>Gender</p>
+                        <p>Gender:</p>
                         <input type="radio" style="width: 1.5em" name="gender" value="male" /><span>Male</span>
                         <input type="radio" style="width: 1.5em" name="gender" value="female" /><span>Female</span>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p>Password</p>
-                        <input type="password" name="password" id="pwd_1" />
+                        <p>Password:</p>
+                        <input type="password" name="password" id="pwd_1" placeholder="Enter Password"/>
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <p>Confirm Password</p>
-                        <input type="password" name="c_password" id="pwd_2" />
+                        <p>Confirm Password:</p>
+                        <input type="password" name="c_password" id="pwd_2" placeholder="Re-enter Password"/>
                       </td>
                     </tr>
                     <tr>
