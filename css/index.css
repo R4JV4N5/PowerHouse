@@ -4,7 +4,6 @@
 }
 body {
   margin: auto;
-
   background-repeat: no-repeat;
 }
 
@@ -19,7 +18,7 @@ body {
   padding-left: 15px;
 }
 
-/* nav bar */
+/* nav bar
 .nav_bar {
   width: 100%;
   height: 100px;
@@ -69,7 +68,7 @@ body {
 #sign_up_button:hover {
   background-color: red;
   color: black;
-}
+} */
 
 /* quote css */
 .Q_div {
