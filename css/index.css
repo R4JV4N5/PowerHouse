@@ -4,7 +4,6 @@
 }
 body {
   margin: auto;
-
   background-repeat: no-repeat;
 }
 
@@ -19,7 +18,7 @@ body {
   padding-left: 15px;
 }
 
-/* nav bar */
+/* nav bar
 .nav_bar {
   width: 100%;
   height: 6em;
@@ -121,6 +120,9 @@ body {
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
+ 
+
+*/
 
 /* quote css */
 .Q_div {
