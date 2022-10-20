@@ -15,38 +15,10 @@
 </head>
 
 <body>
-   <div class="nav_bar">
-    <table style="width: 100%">
-      <tr>
-        <td>
-          <div>
-            <h3 class="m_logo">PowerHouse</h3>
-          </div>
-        </td>
-        <td>
-          <div class="nav_buttons">
-            <ul class="u_list">
-              <li class="nav_items">
-                <a class="nav_items_inside" href="Courses.html">Courses </a>
-              </li>
-              <li class="nav_items">
-                <a class="nav_items_inside" href="member.html">Membership</a>
-              </li>
-              <li class="nav_items">
-                <a class="nav_items_inside" href="">Blogs </a>
-              </li>
-              <li class="nav_items">
-                <a class="nav_items_inside" href="">About Us</a>
-              </li>
-              <li class="nav_items">
-                <a class="nav_items_inside" id="sign_up_button" href="ulogin.html">Sign Up</a>
-              </li>
-            </ul>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </div>
+
+   <?php 
+    require 'partials/_nav.html'
+  ?>
 
    <section class="courses" id="courses">
          <div class="heading">
@@ -141,8 +113,10 @@
             </div>
 
          </div>
-
    </section>
+   <?php 
+    require 'partials/_footer.html'
+    ?>
 </body>
 
 </html>

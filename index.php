@@ -91,12 +91,12 @@
         </div>
         <div class="book_now_para">
           <p class="bn_para">
-            PowerHouse isn't just a gym. It’s a place where lives are
+            PowerHouse isn't just a gym. It's a place where lives are
             transformed. Where fear and intimidation give way to inspiration,
-            achievement & a renewed self-confidence. Where “I can’t” becomes “I
+            achievement & a renewed self-confidence. Where “I can't” becomes “I
             did!” We are a family-run facility promoting family-centred fun,
             fitness, wellness and community. Here you are a name and a person.
-            You have goals, and don’t get a pat on the back just for showing up.
+            You have goals, and don't get a pat on the back just for showing up.
             You become part of our family. We live by our mantra that
             <b>NOTHING IS STRONGER THAN FAMILY..</b>
           </p>
@@ -113,9 +113,9 @@
         <div class="class_head">
           <center>
             <p class="class_head_text_1">explore PowerHouse</p>
-            <center>
+          <center>
               <hr class="head_hr" />
-            </center>
+          </center>
             <p class="class_head_text_2">
               Experience the best group excercise classes in our gym!
             </p>
