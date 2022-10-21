@@ -1,7 +1,7 @@
 /* current page */
-* {
+/* * {
   margin: 0px;
-}
+} */
 body {
   margin: auto;
   background-repeat: no-repeat;
@@ -120,11 +120,13 @@ body {
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
- 
-
-*/
-
 /* quote css */
+.home-vid{
+  width: 100%;
+  position: absolute;
+}
+
+
 .Q_div {
   background-repeat: no-repeat;
   background-size: 1540px;
@@ -135,7 +137,6 @@ body {
 }
 .bg_video {
   width: 100%;
-
   position: absolute;
 }
 

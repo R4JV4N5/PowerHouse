@@ -1,3 +1,30 @@
+<?php
+  $showAlert = false;
+  if($_SERVER["REQUEST_METHOD"]  == "POST"){
+    include "partials/_dbconnect.php";
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $phno = $_POST['phno'];
+    $age = $_POST['age'];
+    $email = $_POST['email'];
+    $gender = $_POST['gender'];
+    $password = $_POST['password'];
+    $c_password = $_POST['c_password']; 
+    $exists = false;
+        
+    if(($password == $c_password) && $exists == false){
+      $query = "insert into register(fname, lname, phno, age, email, gender, password, c_password) 
+        values('$fname', '$lname', '$phno', '$age', '$email', '$gender', '$password', '$c_password' )";
+      $result = mysqli_query($conn, $query); 
+
+      if($result){
+        $showAlert = true;
+      }
+    }    
+  }
+  ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +37,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Economica&family=Staatliches&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Economica&family=Staatliches&display=swap"
     rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
   <link rel="stylesheet" href="css/new_user.css" />
 
   <!-- <script>
@@ -66,7 +114,15 @@
       </tr>
     </table>
   </div>
-
+  
+  <?php
+    if($showAlert){
+      echo'<div class="alert alert-success d-flex align-items-center" role="alert">
+        An example success alert with an icon
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>';
+    }  
+  ?>
   <center>
     <div class="form_div">
       <table>
@@ -81,7 +137,7 @@
               <center>
                 <p class="add_u" style="font-weight: 800;">ADD MEMBER</p>
                 <hr width="100%" />
-                <form onsubmit="return validate();" action="register.php" method="post">
+                <form onsubmit="return validate();" action="new_user.php" method="post">
                   <table>
                     <tr>
                       <td>
@@ -110,8 +166,8 @@
                       </td>
                       <td>
                         <p>Gender:</p>
-                        <input type="radio" style="width: 1.5em" name="gender" value="male" /><span>Male</span>
-                        <input type="radio" style="width: 1.5em" name="gender" value="female" /><span>Female</span>
+                        <input type="radio" style="width: 1.25em" name="gender" value="male" /><span>Male</span>
+                        <input type="radio" style="width: 1.25em" name="gender" value="female" /><span>Female</span>
                       </td>
                     </tr>
                     <tr>

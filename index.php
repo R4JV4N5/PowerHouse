@@ -57,7 +57,6 @@
     <?php 
     require 'partials/_nav.html'
   ?>
-
     <div class="Q_div">
       <video class="bg_video" autoplay loop muted>
         <source src="video/NewWebsiteHOME.webm" type="video/mp4" />
@@ -79,7 +78,6 @@
         </div>
       </center>
     </div>
-
     <div class="book_now_div">
       <center>
         <div class="head_text_div">
@@ -219,7 +217,27 @@
         </table>
       </center>
     </div> -->
-
+    <!-- <div class="Q_div">
+      <video class="bg_video" autoplay loop muted>
+        <source src="video/NewWebsiteHOME.webm" type="video/mp4" />
+      </video>
+      <center>
+        <div class="Quote_div">
+          <h2 class="quote">
+            The <span style="color: red; font-weight: 700">pain</span> You feel
+            today, Will be your
+            <span style="color: red; font-weight: 700">Strength</span> tommorow
+          </h2>
+          <form action="html/member.html">
+            <button type="submit" class="join_button">Get started</button>
+          </form>
+          <p class="Q_para">
+            We do the hard work and you do all the heavy lifting. Get the body
+            you always wanted today!
+          </p>
+        </div>
+      </center>
+    </div> -->
     <!-- footer -->
     <?php 
     require 'partials/_footer.html'

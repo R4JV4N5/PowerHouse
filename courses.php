@@ -5,13 +5,12 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Courses</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/course.css">
    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Economica&family=Staatliches&display=swap"
     rel="stylesheet" />
-
 </head>
 
 <body>
@@ -21,13 +20,11 @@
   ?>
 
    <section class="courses" id="courses">
-         <div class="heading">
-            <span>our courses</span>
+         <div class="heading my-4 py-4">
             <h3>our latest courses</h3>
          </div>
 
          <div class="box-container container">
-
             <div class="box">
                <div class="image">
                   <img src="images/img-1.jpg" alt="">
@@ -114,6 +111,7 @@
 
          </div>
    </section>
+   
    <?php 
     require 'partials/_footer.html'
     ?>
