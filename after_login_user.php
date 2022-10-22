@@ -1,3 +1,21 @@
+<?php
+ 
+  session_start();
+  if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
+    header("location: index.php");
+    exit;
+  }
+  else{
+    include "partials/_dbconnect.php";
+    $email1 = $_SESSION['email'];
+    $query =  "select * from register where email = '$email1'";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);
+    $fname = $row['fname'];
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,20 +37,17 @@
 
   <!--css linking-->
   <link rel="stylesheet" href="css/index.css" />
-  <style>
-    .profile_img{
-        height: 2em;
-        border-radius: 1em;
-
-    }
-    .dropbtn,.profile_img{
-        display: inline;
-    }
-  </style>
+ 
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-  <div class="nav_bar">
+  <!-- <div class="nav_bar">
     <table style="width: 100%">
       <tr>
         <td>
@@ -61,8 +76,8 @@
                   <div class="dropdown-content">
                     <a href="#">Profile</a>
                     <a href="checkin.html">view occupanncy</a>
-                    <!-- <a href="userlist.php">Users List</a> -->
-                    <!-- <a href="#">user Activities</a> -->
+                    <a href="userlist.php">Users List</a>
+                    <a href="#">user Activities</a>
                   </div>
                 </div>
               </li>
@@ -71,7 +86,11 @@
         </td>
       </tr>
     </table>
-  </div>
+  </div> -->
+
+  <?php
+    require "partials/_nav2.php";
+  ?>
 
   <div class="Q_div">
     <video class="bg_video" autoplay loop muted>
@@ -105,12 +124,12 @@
       </div>
       <div class="book_now_para">
         <p class="bn_para">
-          PowerHouse isn't just a gym. It’s a place where lives are
+          PowerHouse isn't just a gym. It's a place where lives are
           transformed. Where fear and intimidation give way to inspiration,
-          achievement & a renewed self-confidence. Where “I can’t” becomes “I
+          achievement & a renewed self-confidence. Where “I can't” becomes “I
           did!” We are a family-run facility promoting family-centred fun,
           fitness, wellness and community. Here you are a name and a person.
-          You have goals, and don’t get a pat on the back just for showing up.
+          You have goals, and don't get a pat on the back just for showing up.
           You become part of our family. We live by our mantra that <b>NOTHING IS
           STRONGER THAN FAMILY..</b>
         </p>
@@ -169,99 +188,9 @@
       </div>
     </div>
   </div>
-  <div class="footer_div">
-    <center>
-      <table>
-        <tr>
-          <td class="footer_table_td">
-            <p class="footer_heading">contact us</p>
-          </td>
-          <td class="footer_table_td">
-            <p class="footer_heading">connect with us !</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="footer_table_td">
-            <p class="footer_details">
-              <span style="color: red ;">Address</span>: Lorem ipsum dolor sit amet, consectetur adipisicing elit.\
-            </p>
-
-          </td>
-
-          <td class="footer_table_td">
-            <a href="" class="footer_details"><img src="images/icons/instagram.png" alt="instagram"> bili_bili</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="footer_table_td">
-            <p class="footer_details">
-              <span style="color: red ;">phone</span>: +918547265896
-            </p>
-
-          </td>
-
-          <td class="footer_table_td">
-            <a href="" class="footer_details"><img src="images/icons/facebook.png" alt="facebook">&nbspbili_bili</a>
-          </td>
-        </tr>
-        <tr>
-          <td class="footer_table_td">
-
-
-            <a href="mailto:rajvenniyar65@gmail.com" class="footer_details">
-              <p>
-                <span style="color: red ;">email</span>: powerhouse@gmail.com
-              </p>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </center>
-  </div>
-  <!-- <div class="workout_plans_div">
-      <center>
-        <h2 class="wk_title">Our Trainings</h2>
-      </center>
-      <div class="inner_wk_div">
-        <center>
-
-          <table>
-            <tr>
-              <td class="workouts_data_td">
-                <img
-                  class="workouts_home"
-                  src="images/cardio.jpg"
-                  alt="cardio_pic"
-                />
-                <p class="wk_titles_names">cardio</p>
-              </td>
-              <td class="workouts_data_td">
-                <p class="wk_titles_names">weight Lifting</p>
-                <img
-                  class="workouts_home"
-                  src="images/weight_lifting.jpg"
-                  alt="weight_lifting"
-                />
-              </td>
-              <td class="workouts_data_td">
-                <img
-                  class="workouts_home"
-                  src="images/cross_fit.jpg"
-                  alt="weight_lifting"
-                />
-                <p class="wk_titles_names">Cross Fit</p>
-              </td>
-            </tr>
-          </table>
-        </center>
-        <center>
-          <p class="wk_title_link_text">check Out for more details</p>
-          <button class="lets_go_button">
-            <a class="lets_go_link" href="/html/workouts.html">Lets Go</a>
-          </button>
-        </center>
-      </div>
-    </div> -->
+  <?php 
+    require 'partials/_footer.html'
+    ?>
 </body>
 
 </html>

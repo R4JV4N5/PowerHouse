@@ -16,7 +16,7 @@
 <body>
 
    <?php 
-    require 'partials/_nav.html'
+    require 'partials/_nav.php'
   ?>
 
    <section class="courses" id="courses">

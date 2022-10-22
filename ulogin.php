@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"]  == "POST"){
 	if ($num == 1) {
 		$showAlert = true;
 		session_start();
-		header("location: after_login_user.html");
+		header("location: after_login_user.php");
 	}
 	else {
 		$showError = true;
@@ -28,10 +28,12 @@ if($_SERVER["REQUEST_METHOD"]  == "POST"){
 	<title>User Login</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
 
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 	
-		<link rel="stylesheet" href="css/ulogin.css" />
+	<!-- <link rel="stylesheet" href="css/ulogin.css" /> -->
+
 </head>
 
 <body style="background-image: url('images/gym.png')">
@@ -57,18 +59,28 @@ if($_SERVER["REQUEST_METHOD"]  == "POST"){
         height: 100%;
         display: inline-block;
       ">
-		<div class="box-form">
+		<form class="col-3">
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1">
+			</div>
+			<div class="mb-3 form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Check me out</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+	<!-- <div class="box-form">
 			<div class="left" style="background-image: url('images/dumbess.jpg')">
 				<div class="overlay">
 					<h1>Powerhouse</h1>
 					<h2>Gains is what you gain here</h2>
-					<!-- <span>
-						<p>Follow us here</p>
-						<a href="https://www.facebook.com/groups/557118538870807/?ref=share"><i class="fa fa-facebook"
-								aria-hidden="true"></i> Facebook</a>
-						<a href="https://instagram.com/powerhousegym?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"
-								aria-hidden="true"></i> Instagram</a>
-					</span> -->
 				</div>
 			</div>
 
@@ -91,19 +103,9 @@ if($_SERVER["REQUEST_METHOD"]  == "POST"){
 				
 				<div class="inputs">
 				</div>
-
-				<!-- <br /><br /> -->
-
-				<!-- <div class="remember-me--forget-password">
-					<label>
-						<input type="checkbox" name="item" checked />
-						<span class="text-checkbox">Show password</span>
-					</label>
-				</div> -->
 			</div>
-		</div>
+		</div> -->
 	</div>
-	<!-- partial -->
 </body>
 
 </html>
