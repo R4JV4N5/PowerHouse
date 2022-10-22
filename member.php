@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,52 +8,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/member.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Economica&family=Staatliches&display=swap"
-    rel="stylesheet" />
+        rel="stylesheet" />
 </head>
+
 <body>
-    <div class="nav_bar">
-        <table style="width: 100%">
-          <tr>
-            <td>
-              <div>
-                <h3 class="m_logo">PowerHouse</h3>
-              </div>
-            </td>
-            <td>
-              <div class="nav_buttons">
-                <ul class="u_list">
-                  <li class="nav_items">
-                    <a class="nav_items_inside" href="Courses.html">Classes </a>
-                  </li>
-                  <li class="nav_items">
-                    <a class="nav_items_inside" href="member.html"
-                      >Membership Options
-                    </a>
-                  </li>
-                  <!-- <li class="nav_items">
-                          <a class="nav_items_inside" href="">Blogs </a>
-                        </li> -->
-                  <li class="nav_items">
-                    <a class="nav_items_inside" href="">About us</a>
-                  </li>
-                  <li class="nav_items">
-                    <div class="dropdown">
-                      <a class="dropbtn">Options</a>
-                      <div class="dropdown-content">
-                        <a href="#">Add Member</a>
-                        <a href="checkin.html">Check-In-Out</a>
-                        <a href="userlist.php">Users List</a>
-                        <!-- <a href="#">user Activities</a> -->
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-  
+    <?php 
+      session_start();
+      if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
+        require "partials/_nav.php";
+      }else{
+        require "partials/_nav2.php";
+      }
+      ?>
     <div class="wrapper">
         <div class="singleprice">
             <h1>Monthly</h1>
@@ -104,7 +71,8 @@
             <a href="#">Learn more</a>
         </div>
     </div>
-    
-    
+
+
 </body>
+
 </html>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 $login = false;
 $showError = false;
 if($_SERVER["REQUEST_METHOD"]  == "POST"){
@@ -11,9 +12,10 @@ if($_SERVER["REQUEST_METHOD"]  == "POST"){
 	$num = mysqli_num_rows($result);
 	if ($num == 1) {
 		$login =  true;
-		session_start();
+		
         $_SESSION['loggedin'] = true;
         $_SESSION['email'] = $email;
+        $_SESSION['flag'] = 0;
 		header("location: after_login_user.php");
 	}
 	else {
@@ -58,22 +60,14 @@ if($_SERVER["REQUEST_METHOD"]  == "POST"){
     require 'partials/_nav.php'
   ?>
 
-<?php
-		if ($login) {
-			echo'<div class="alert alert-success d-flex align-items-center" role="alert">
-        SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>';
-		}
+    <?php 
+    if($showError){
+       echo  '<div class="alert alert-danger" role="alert" style = "margin-top: 90px;">
+                A simple success alert—check it out!
+            </div>';
+    }
+  ?>
 
-		if ($showError) {
-			echo'<div class="alert alert-danger d-flex align-items-center" role="alert">
-        UNSUCESSSSSS
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>';
-		}
-	?>
-    
     <div class="Q_div">
         <video class="bg_video" autoplay loop muted>
             <source src="video/NewWebsiteHOME.webm" type="video/mp4" />

@@ -1,29 +1,29 @@
 <!-- css -->
 <style>
-.nav-link {
-    color: white;
-    border-radius: 0.5rem;
-    font-size: 1.25em;
-}
+    .nav-link {
+        color: white;
+        border-radius: 0.5rem;
+        font-size: 1.25em;
+    }
 
-.nav-link:hover {
-    background-color: orangered;
-}
+    .nav-link:hover {
+        background-color: orangered;
+    }
 
-.m_logo {
-    color: white;
-    font-size: 2rem;
-    font-family: "Bungee";
-    text-decoration: none;
-}
+    .m_logo {
+        color: white;
+        font-size: 2rem;
+        font-family: "Bungee";
+        text-decoration: none;
+    }
 
-.m_logo:hover {
-    color: white;
-}
+    .m_logo:hover {
+        color: white;
+    }
 
-.btn-primary {
-    background-color: orangered;
-}
+    .btn-primary {
+        background-color: orangered;
+    }
 </style>
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-expand-md bg-dark">
@@ -39,7 +39,7 @@
                     <a class="nav-link text-light" href="courses.php">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="member.html">Membership</a>
+                    <a class="nav-link text-light" href="member.php">Membership</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#">Blogs</a>
