@@ -8,7 +8,7 @@
   else{
     include "partials/_dbconnect.php";
     $email1 = $_SESSION['email'];
-    $_SESSION['flag'] = 1;
+    // $_SESSION['flag'] = 1;
     $query =  "select * from register where email = '$email1'";
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_assoc($result);
@@ -45,21 +45,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
 
     <?php
-    require "partials/_nav2.php";
+    require "partials/_nav.php";
   ?>
 
     <?php
-    if($_SESSION['flag'] == 1){
-      echo '<div class="alert alert-success" role="alert">
-        A simple success alert—check it out!
-      </div>';
-      $_SESSION['flag'] = 2;
-    }
+    // if($_SESSION['flag'] == 1){
+    //     echo  '<div class="alert alert-success alert-dismissible fade show" role="alert" style = "margin-top: 5em; margin-bottom:0.2em;">
+    //     Login successful
+    //     <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="
+    //     padding: 0px;
+    //     border: 0px;
+    //     background-color: #d1e7dd;">
+    //     <span aria-hidden="true">&times;</span>
+    //     </button>
+    // </div>';
+    //   $_SESSION['flag'] = 2;
+    // }
   ?>
 
     <div class="Q_div">
