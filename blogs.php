@@ -66,7 +66,12 @@
     </style>
   </head>
   <body>
-    <h2 class="sample_nav"><center>here comes nav_bar</center></h2>
+    
+    <?php
+    require "partials/_nav2.php";
+  ?>
+
+
     <div class="blog_box">
       <h1 class="B_title">
         <center>Blog</center>
@@ -167,5 +172,9 @@
         </div>
       </center>
     </div>
+
+    <?php 
+    require 'partials/_footer.html'
+    ?>
   </body>
 </html>
