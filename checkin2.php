@@ -196,7 +196,7 @@
       background-size: 100%;
     "
   >
-    <div class="nav_bar">
+    <!-- <div class="nav_bar">
       <table style="width: 100%">
         <tr>
           <td>
@@ -215,9 +215,9 @@
                     >Membership Options
                   </a>
                 </li>
-                <!-- <li class="nav_items">
+                <li class="nav_items">
                         <a class="nav_items_inside" href="">Blogs </a>
-                      </li> -->
+                      </li>
                 <li class="nav_items">
                   <a class="nav_items_inside" href="">About us</a>
                 </li>
@@ -228,7 +228,7 @@
                       <a href="#">Add Member</a>
                       <a href="checkin.html">Check-In-Out</a>
                       <a href="userlist.php">Users List</a>
-                      <!-- <a href="#">user Activities</a> -->
+                      <a href="#">user Activities</a>
                     </div>
                   </div>
                 </li>
@@ -237,8 +237,9 @@
           </td>
         </tr>
       </table>
-    </div>
+    </div> -->
 
+    <?php require "partials/_adminNav.php"; ?>
     <div class="main2">
       <form action="checkin.php" method="post" class="main">
         <center><h2>CHECK IN & CHECK OUT</h2></center>

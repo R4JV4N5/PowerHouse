@@ -37,27 +37,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Economica&family=Staatliches&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Economica&family=Staatliches&display=swap"
     rel="stylesheet" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+    <!-- bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script> -->
   <link rel="stylesheet" href="css/new_user.css" />
 
   <!-- <script>
@@ -74,7 +68,7 @@
 
 
 <body style="background-image: url('images/add_user_bg.jpg');">
-  <div class="nav_bar">
+  <!-- <div class="nav_bar">
     <table style="width: 100%">
       <tr>
         <td>
@@ -91,12 +85,12 @@
               <li class="nav_items">
                 <a class="nav_items_inside" href="member.html">Membership</a>
               </li>
-              <!-- <li class="nav_items">
+              <li class="nav_items">
                 <a class="nav_items_inside" href="">Blogs </a>
-              </li> -->
-              <!-- <li class="nav_items">
+              </li>
+              <li class="nav_items">
                 <a class="nav_items_inside" href="">About us</a>
-              </li> -->
+              </li>
               <li class="nav_items">
                 <div class="dropdown">
                   <a class="dropbtn">Options</a>
@@ -104,7 +98,7 @@
                     <a href="#">Add Member</a>
                     <a href="checkin.html">Check-In-Out</a>
                     <a href="userlist.php">Users List</a>
-                    <!-- <a href="#">user Activities</a> -->
+                    <a href="#">user Activities</a>
                   </div>
                 </div>
               </li>
@@ -113,8 +107,10 @@
         </td>
       </tr>
     </table>
-  </div>
+  </div> -->
   
+  <?php require "partials/_adminNav.php"; ?>
+
   <?php
     if($showAlert){
       echo'<div class="alert alert-success d-flex align-items-center" role="alert">
@@ -124,7 +120,7 @@
     }  
   ?>
   <center>
-    <div class="form_div">
+    <div class="form_div" style="margin-top: 8em;">
       <table>
         <tr>
           <td width="40%">

@@ -85,7 +85,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="profile.php">View Profile</a></li>
                             <li><a class="dropdown-item" href="counter.php">Check occupanncy</a></li>
-                            <li><a class="dropdown-item" href="#">Log-out</a></li>
+                            <li><a class="dropdown-item" href="logout.php">Log-out</a></li>
                         </ul>
                     </div>
                 </li>';}

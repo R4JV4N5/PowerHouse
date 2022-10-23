@@ -32,7 +32,7 @@
         </style>
     </head>
     <body>
-        <div class="nav_bar">
+        <!-- <div class="nav_bar">
             <table style="width: 100%">
             <tr>
                 <td>
@@ -62,7 +62,7 @@
                                             <a href="new_user.html">Add Member</a>
                                             <a href="checkin.html">check-in-out</a>
                                             <a href="userlist.php">Users List</a>
-                                            <!-- <a href="#">user Activities</a> -->
+                                            <a href="#">user Activities</a>
                                         </div>
                                 </div>
                             </li>
@@ -71,7 +71,8 @@
                 </td>
             </tr>
             </table>
-        </div>
+        </div> -->
+        <?php require "partials/_adminNav.php"; ?>
         <table class='main' border= '2'>
                 <tr>
                     <th>First Name</th>

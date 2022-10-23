@@ -96,7 +96,7 @@
     </style>
   </head>
   <body>
-    <?php require "partials/_nav2.php"; ?>
+    <?php require "partials/_nav.php"; ?>
     
     <div class="row my-5 py-5 mx-3">
       <div class="col-xl-4">
