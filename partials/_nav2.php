@@ -57,7 +57,7 @@
                     <a class="nav-link text-light" href="member.php">Membership</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Blogs</a>
+                    <a class="nav-link text-light" href="blogs.php">Blogs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#">About Us</a>
