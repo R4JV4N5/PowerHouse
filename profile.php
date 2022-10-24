@@ -1,5 +1,5 @@
 <?php
- 
+ error_reporting (0);
   session_start();
   if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
     header("location: index.php");
@@ -14,6 +14,8 @@
   $lname = $row['lname'];
   $email = $row['email'];
   $phno = $row['phno'];
+  $doj = $row['date_join'];
+  $doe = $row['date_end'];
 }
 
 ?>
@@ -206,6 +208,31 @@
                     name="birthday"
                     placeholder="Enter your birthday"
                     value="06/10/1988"
+                  />
+                </div>
+              </div>
+              <div class="row gx-3 mb-3">
+                <div class="col-md-6">
+                  <label class="small mb-1" for="date-join"
+                    >Date of Joining</label
+                  >
+                  <input
+                    class="form-control"
+                    id="date-join"
+                    type="text"
+                    value=<?php echo $doj ?>
+                    disabled="disabled"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="small mb-1" for="date-end">Date of Ending</label>
+                  <input
+                    class="form-control"
+                    id="date-end"
+                    type="text"
+                    name="date-end"
+                    value=<?php echo $doe ?>
+                    disabled="disabled"
                   />
                 </div>
               </div>

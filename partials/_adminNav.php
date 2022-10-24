@@ -34,11 +34,11 @@
         font-size: 1.25em;
     }
 
-    .nav-link:hover {
+    .nav-text:hover {
         background-color: orangered;
     }
 
-    .m_lo   go {
+    .m_logo {
         color: white;
         font-size: 2rem;
         font-family: "Bungee";
@@ -47,6 +47,7 @@
 
     .m_logo:hover {
         color: white;
+        text-decoration: none;
     }
 
     .btn-primary {
@@ -66,28 +67,48 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="d-flex navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="courses.php">Courses</a>
+                    <a class="nav-link nav-text text-light" href="courses.php">Courses</a>
                 </li>
+                
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="member.php">Membership</a>
+                    <a class="nav-link text-light">|</a>
                 </li>
+                
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="blogs.php">Blogs</a>
+                    <a class="nav-link nav-text text-light" href="member.php">Membership Plans</a>
                 </li>
+                
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">About Us</a>
+                    <a class="nav-link text-light">|</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-text text-light" href="new_user.php">Add New Member</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-light">|</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link nav-text text-light" href="counter.php">View Occupancy</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-light">|</a>
+                </li>
+                
                 <li class="nav-item">
                     <div class="dropdown my-1">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" style="margin-right: 2.5em; margin-left: 1em">
+                            aria-expanded="false" style="margin-right: 2.5em; margin-left: 0.5em">
                             More Options
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="new_user.php">Add New Member</a></li>
+                            <li></li>
                             <li><a class="dropdown-item" href="checkin2.php">Check-In-Out</a></li>
                             <li><a class="dropdown-item" href="userlist.php">User List</a></li>
-                            <li><a class="dropdown-item" href="counter.php">View Occupancy</a></li>
+                            <li><a class="dropdown-item" href="#">View Logs</a></li>
                         </ul>
                     </div>
                 </li>
