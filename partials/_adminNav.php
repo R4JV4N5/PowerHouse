@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -57,8 +60,6 @@
     </style>
 </head>
 
-
-
 <nav class="navbar fixed-top navbar-expand-lg navbar-expand-md bg-dark">
     <div class="container-fluid">
         <a class="m_logo" href="after_login_user.php">POWERHOUSE</a>
@@ -71,7 +72,7 @@
                     <a class="nav-link text-light" href="member.php">Membership</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Blogs</a>
+                    <a class="nav-link text-light" href="blogs.php">Blogs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#">About Us</a>

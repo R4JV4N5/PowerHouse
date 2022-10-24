@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <?php require "partials/_nav2.php"; ?>
+    <?php require "partials/_nav.php"; ?>
 
     <center>
         <div class="num_container">

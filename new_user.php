@@ -1,5 +1,7 @@
 <?php
   $showAlert = false;
+  session_start();
+  // $_SESSION['admin'] = true;
   if($_SERVER["REQUEST_METHOD"]  == "POST"){
     include "partials/_dbconnect.php";
     $fname = $_POST['fname'];

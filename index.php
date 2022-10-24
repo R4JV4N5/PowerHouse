@@ -1,6 +1,8 @@
 <?php
 session_start();
 $_SESSION['loggedin'] = false;
+// $_SESSION['admin'] = false; 
+// $_SESSION['user'] = true;
 $login = false;
 $showError = false;
 if($_SERVER["REQUEST_METHOD"]  == "POST"){
