@@ -22,51 +22,48 @@
       ?>
     <div class="wrapper">
         <div class="singleprice">
-            <h1>Monthly</h1>
+            <h1>Silver</h1>
             <div class="price">
-                <h2>₹1,000</h2>
+            <h2></h2>
+            <h2>Price</h2>
+            <h2>₹</h2>
+            <h2>5,000</h2>
             </div>
             <div class="deals">
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
+                <h4>Weights</h4>
+                <h4>Cardio</h4>
+                <h4>Yoga Room</h4>
+                
             </div>
             <a href="#">Learn more</a>
         </div>
-    </div>
-    <div class="wrapper">
         <div class="singleprice">
-            <h1>Quarterly</h1>
+            <h1>Gold</h1>
             <div class="price">
-                <h2>₹2,800</h2>
+            <h2></h2>
+            <h2>Price</h2>
+            <h2>₹</h2>
+            <h2>10,000</h2>
             </div>
             <div class="deals">
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
+                <h4>Silver</h4>
+                <h4>Steam</h4>
+                <h4>Sauna</h4>
             </div>
-            <a href="#">Learn more</a>
+            <a href="wa.me/+919029020360">Learn more</a>
         </div>
-    </div>
-    <div class="wrapper">
         <div class="singleprice">
-            <h1>Annually</h1>
+            <h1>Platinum</h1>
             <div class="price">
-                <h2>₹11,000</h2>
+            <h2></h2>
+            <h2>Price</h2>
+            <h2>₹</h2>
+            <h2>15,000</h2>
             </div>
             <div class="deals">
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
-                <h4>Hello</h4>
+                <h4>Silver</h4>
+                <h4>Gold</h4>
+                <h4>Personal sTrainer</h4>
             </div>
             <a href="#">Learn more</a>
         </div>
