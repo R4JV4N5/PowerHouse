@@ -35,7 +35,7 @@
                 <h4>Yoga Room</h4>
                 
             </div>
-            <a href="#">Learn more</a>
+            <a href="https://wa.me/+919029020360">Learn more</a>
         </div>
         <div class="singleprice">
             <h1>Gold</h1>
@@ -50,7 +50,7 @@
                 <h4>Steam</h4>
                 <h4>Sauna</h4>
             </div>
-            <a href="wa.me/+919029020360">Learn more</a>
+            <a href="https://wa.me/+919029020360">Learn more</a>
         </div>
         <div class="singleprice">
             <h1>Platinum</h1>
@@ -65,7 +65,7 @@
                 <h4>Gold</h4>
                 <h4>Personal sTrainer</h4>
             </div>
-            <a href="#">Learn more</a>
+            <a href="https://wa.me/+919029020360">Learn more</a>
         </div>
     </div>
 
