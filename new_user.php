@@ -7,8 +7,8 @@
   $today = $year . '-' . $month . '-' . $day;
 
   $showAlert = false;
+  $exists = false;
   session_start();
-  // $_SESSION['admin'] = true;
   if($_SERVER["REQUEST_METHOD"]  == "POST"){
     include "partials/_dbconnect.php";
     $fname = $_POST['fname'];
@@ -21,8 +21,14 @@
     $c_password = $_POST['c_password']; 
     $doj = date('Y-m-d', strtotime($_POST['date-join']));
     $doe = date('Y-m-d', strtotime($_POST['date-end']));
-    $exists = false;
-        
+    
+    $check = "select * from register where email = '$email'";
+    $result2 =  mysqli_query($conn, $check);
+    $num = mysqli_num_rows($result2);
+    if($num != 0){
+        $exists = true;
+    }
+
     if(($password == $c_password) && $exists == false){
       $query = "insert into register(fname, lname, phno, age, email, gender, password, c_password, date_join, date_end) 
         values('$fname', '$lname', '$phno', '$age', '$email', '$gender', '$password', '$c_password', '$doj', '$doe' )";
@@ -62,6 +68,13 @@
       echo'<div class="alert alert-success d-flex align-items-center" role="alert">
         New Member added successfully
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>';
+    }  
+    
+    if($exists){
+      echo'<div class="alert alert-danger d-flex align-items-center my-3" role="alert">
+        <b>Error!</b> Member not addded. Email Id already exists!
+        <button type="button" class="btn-close mx-2" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>';
     }  
   ?>
@@ -134,8 +147,10 @@
                                         <tr>
                                             <td>
                                                 <div class="mb-3 form-check" style="margin-top: 0.5em;">
-                                                    <input type="checkbox" class="form-check-input" id="show-check" style="height: 1em; width: 1em;" onclick="showPass()">
-                                                    <label class="form-check-label" for="show-check">Show Password</label>
+                                                    <input type="checkbox" class="form-check-input" id="show-check"
+                                                        style="height: 1em; width: 1em;" onclick="showPass()">
+                                                    <label class="form-check-label" for="show-check">Show
+                                                        Password</label>
                                                 </div>
                                             </td>
                                         </tr>
@@ -165,20 +180,19 @@
         </div>
     </center>
 </body>
+
 </html>
 
 <script>
-    function showPass(){
-        var show = document.getElementById('pwd_1');
-        var show2 = document.getElementById('pwd_2');
-        if (show.type=='password' && show2.type=='password'){
-            show.type = 'text';
-            show2.type = 'text';
-        }
-        else{
-            show.type = 'password';
-            show2.type = 'password';
-        }
+function showPass() {
+    var show = document.getElementById('pwd_1');
+    var show2 = document.getElementById('pwd_2');
+    if (show.type == 'password' && show2.type == 'password') {
+        show.type = 'text';
+        show2.type = 'text';
+    } else {
+        show.type = 'password';
+        show2.type = 'password';
     }
-
+}
 </script>

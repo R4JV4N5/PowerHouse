@@ -2,8 +2,8 @@
 	$emailid = $_POST['emailid'];
 	// Database connection
   include "partials/_dbconnect.php";
-  $checkin  = 'Check In';
-  $checkout  = 'Check Out';
+  $checkin  = 'CheckIn';
+  $checkout  = 'CheckOut';
   $showError = false;
 
 	if(isset($_POST['checkin'])){

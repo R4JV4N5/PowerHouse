@@ -12,6 +12,32 @@
     $doe = $row['date_end'];
 ?>
 
+<?php
+if($_SERVER["REQUEST_METHOD"]  == "POST"){
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $phno = $_POST['phno'];
+    $age = $_POST['age'];
+    $email = $_POST['email'];
+    $gender = $_POST['gender'];
+    $password = $_POST['password'];
+    $c_password = $_POST['c_password']; 
+    $doj = date('Y-m-d', strtotime($_POST['date-join']));
+    $doe = date('Y-m-d', strtotime($_POST['date-end']));
+    
+
+    if(($password == $c_password) && $exists == false){
+      $query = "update register set(fname, lname, phno, age, email, gender, password, c_password, date_join, date_end) 
+        values('$fname', '$lname', '$phno', '$age', '$email', '$gender', '$password', '$c_password', '$doj', '$doe' )";
+      $result = mysqli_query($conn, $query); 
+
+      if($result){
+        $showAlert = true;
+      }
+    }    
+  }
+  ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,106 +45,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+    <title>PowerHouse - Update Details</title>
 </head>
 
 <body>
+    <?php 
+    require "partials/_adminNav.php"
+?>
 
-    <!-- Modal -->
-    <!-- <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="updateModalLabel">update account</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class=""> -->
-                        <!-- Account details card-->
-                        <div class="card mb-4">
-                            <div class="card-header">Account Details</div>
-                            <div class="card-body">
-                                <form>
-                                    <!-- Form Group (username)-->
-                                    <div class="mb-3">
-                                        <label class="small mb-1" for="inputUsername">Username</label>
-                                        <input class="form-control" id="inputUsername" type="text"
-                                            placeholder="Enter your username" value="username" />
-                                    </div>
-                                    <!-- Form Row-->
-                                    <div class="row gx-3 mb-3">
-                                        <!-- Form Group (first name)-->
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="inputFirstName">First name</label>
-                                            <input class="form-control" id="inputFirstName" type="text"
-                                                placeholder="Enter your first name" value=<?php echo $fname ?> />
-                                        </div>
-                                        <!-- Form Group (last name)-->
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="inputLastName">Last name</label>
-                                            <input class="form-control" id="inputLastName" type="text"
-                                                placeholder="Enter your last name" value=<?php echo $lname ?> />
-                                        </div>
-                                    </div>
-                                    <!-- Form Row        -->
-                                    <!-- Form Group (email address)-->
-                                    <div class="mb-3">
-                                        <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                                        <input class="form-control" id="inputEmailAddress" type="email"
-                                            placeholder="Enter your email address" value=<?php echo $email ?> />
-                                    </div>
-                                    <!-- Form Row-->
-                                    <div class="row gx-3 mb-3">
-                                        <!-- Form Group (phone number)-->
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="inputPhone">Phone number</label>
-                                            <input class="form-control" id="inputPhone" type="tel"
-                                                placeholder="Enter your phone number" value=<?php echo $phno ?> />
-                                        </div>
-                                        <!-- Form Group (birthday)-->
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="inputBirthday">Birthday</label>
-                                            <input class="form-control" id="inputBirthday" type="text" name="birthday"
-                                                placeholder="Enter your birthday" value="06/10/1988" />
-                                        </div>
-                                    </div>
-                                    <div class="row gx-3 mb-3">
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="date-join">Date of Joining</label>
-                                            <input class="form-control" id="date-join" type="text"
-                                                value=<?php echo $doj ?> disabled="disabled" />
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="date-end">Date of Ending</label>
-                                            <input class="form-control" id="date-end" type="text" name="date-end"
-                                                value=<?php echo $doe ?> disabled="disabled" />
-                                        </div>
-                                    </div>
-                                    <!-- Save changes button-->
-                                    <button class="btn btn-primary" type="button">
-                                        Save changes
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
+    <h3 class="text-center" style="margin-top:3em; margin-bottom:2em; font-weight:800;">UPDATE ACCOUNT DETAILS</h3>
+    <!-- Account details card-->
+    <div class="card mb-4" style="margin-right:3em; margin-left:3em;">
+        <div class="card-header">Account Details</div>
+        <div class="card-body">
+            <form action="_updateModal.php" method="post">
+                <!-- Form Group (username)-->
+                <!-- Form Row-->
+                <div class="row gx-3 mb-3">
+                    <!-- Form Group (first name)-->
+                    <div class="col-md-6">
+                        <label class="small mb-1" for="inputFirstName">First name</label>
+                        <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name"
+                            value=<?php echo $fname ?> />
+                    </div>
+                    <!-- Form Group (last name)-->
+                    <div class="col-md-6">
+                        <label class="small mb-1" for="inputLastName">Last name</label>
+                        <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name"
+                            value=<?php echo $lname ?> />
                     </div>
                 </div>
-            </div>
+                <!-- Form Row        -->
+                <!-- Form Group (email address)-->
+
+                <!-- Form Row-->
+                <div class="row gx-3 mb-3">
+                    <div class="col-md-6">
+                        <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                        <input class="form-control" id="inputEmailAddress" type="email"
+                            placeholder="Enter your email address" value=<?php echo $email ?> disabled=disabled />
+                    </div>
+                    <!-- Form Group (phone number)-->
+                    <div class="col-md-6">
+                        <label class="small mb-1" for="inputPhone">Phone number</label>
+                        <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number"
+                            value=<?php echo $phno ?> />
+                    </div>
+                </div>
+                <div class="row gx-3 mb-3">
+                    <div class="col-md-6">
+                        <label class="small mb-1" for="date-join">Joining Date</label>
+                        <input class="form-control" type="date" id="date-join" name="date-end" value=<?php echo $doj ?>>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="small mb-1" for="date-end">Ending Date</label>
+                        <input class="form-control" type="date" id="date-end" name="date-end" value=<?php echo $doe ?>>
+                    </div>
+                </div>
+                <!-- Save changes button-->
+                <button class="btn btn-primary" type="button">
+                    Save changes
+                </button>
+            </form>
         </div>
     </div>
 

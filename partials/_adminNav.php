@@ -95,7 +95,7 @@
                             <li></li>
                             <li><a class="dropdown-item" href="checkin.php">Check-In-Out</a></li>
                             <li><a class="dropdown-item" href="userlist.php">User List</a></li>
-                            <li><a class="dropdown-item" href="#">View Logs</a></li>
+                            <li><a class="dropdown-item" href="logs.php">View Logs</a></li>
                         </ul>
                     </div>
                 </li>

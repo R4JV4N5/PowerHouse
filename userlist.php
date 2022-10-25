@@ -6,7 +6,6 @@
     table.main {
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
     }
 
     th {
@@ -39,6 +38,7 @@
 
 <body>
     <?php require "partials/_adminNav.php"; ?>
+    <h3 class="text-center" style= "margin-top:4em; font-weight:800;">GYM USER DETAILS</h3>
     <table class='main' border='2'>
         <tr style="text-align: center;">
             <th>First Name</th>
@@ -54,12 +54,10 @@
 </html>
 <?php
 include "partials/_dbconnect.php";
-// error reporting (0);
 $query= "select * from register";
 $data = mysqli_query($conn, $query);
 $total = mysqli_num_rows($data);
 echo $total;
-// $result = mysqli_fetch_assoc($data);
 while($result = mysqli_fetch_assoc($data)){
     echo "<tr>
         <td>".$result['fname']."</td>
@@ -72,7 +70,5 @@ while($result = mysqli_fetch_assoc($data)){
         <td><a href= 'delete.php?id=$result[email]' class = 'del-btn'>Delete</a></td>
     </tr>";
 }
-
-// include "_updateModal.php";
 
 ?>
