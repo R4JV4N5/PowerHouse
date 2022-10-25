@@ -73,10 +73,10 @@ if($_SERVER["REQUEST_METHOD"]  == "POST"){
 
     <?php 
     if($showError){
-       echo  '<div class="alert alert-danger alert-dismissible fade show" role="alert" style = "margin-top: 5em; margin-bottom:0.2em;">
+       echo  '<div class="alert alert-danger alert-dismissible fade show text-center" role="alert" style = "margin-top: 1.75em; margin-bottom:0.2em;">
                 Invalid credentials!
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="
-                padding: 0px;
+                padding-left: 1em;
                 border: 0px;
                 background-color: #f8d7da;">
                 <span aria-hidden="true">&times;</span>

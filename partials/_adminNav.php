@@ -50,7 +50,7 @@
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-expand-md bg-dark">
     <div class="container-fluid">
-        <a class="m_logo" href="after_login_user.php">POWERHOUSE</a>
+        <a class="m_logo" href="new_user.php">POWERHOUSE</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="d-flex navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -93,7 +93,7 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li></li>
-                            <li><a class="dropdown-item" href="checkin2.php">Check-In-Out</a></li>
+                            <li><a class="dropdown-item" href="checkin.php">Check-In-Out</a></li>
                             <li><a class="dropdown-item" href="userlist.php">User List</a></li>
                             <li><a class="dropdown-item" href="#">View Logs</a></li>
                         </ul>

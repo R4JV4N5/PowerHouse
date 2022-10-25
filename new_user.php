@@ -133,9 +133,10 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <input type="checkbox" style="width: 1.5em" name="show_pass"
-                                                    id="show_pass" onclick="show_pass()" /><span> Show
-                                                    Password</span>
+                                                <div class="mb-3 form-check" style="margin-top: 0.5em;">
+                                                    <input type="checkbox" class="form-check-input" id="show-check" style="height: 1em; width: 1em;" onclick="showPass()">
+                                                    <label class="form-check-label" for="show-check">Show Password</label>
+                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
@@ -164,5 +165,20 @@
         </div>
     </center>
 </body>
-
 </html>
+
+<script>
+    function showPass(){
+        var show = document.getElementById('pwd_1');
+        var show2 = document.getElementById('pwd_2');
+        if (show.type=='password' && show2.type=='password'){
+            show.type = 'text';
+            show2.type = 'text';
+        }
+        else{
+            show.type = 'password';
+            show2.type = 'password';
+        }
+    }
+
+</script>
