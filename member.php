@@ -63,7 +63,7 @@
             <div class="deals">
                 <h4>Silver</h4>
                 <h4>Gold</h4>
-                <h4>Personal sTrainer</h4>
+                <h4>Personal Trainer</h4>
             </div>
             <a href="https://wa.me/+919029020360">Learn more</a>
         </div>
