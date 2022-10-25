@@ -8,21 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PowerHouse - Blogs</title>
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
     <style>
       * {
         margin: 0px;
@@ -108,7 +93,7 @@
                       class="blog_img"
                     />
                     <p class="blog_content">
-                        A self-described community of “underdogs, misfits, and mutants” ready and willing to help people with every step of their fitness journey, Nerd Fitness is a comprehensive resource that’s motivating and inspiring. Sure, they’ll teach you how to work out without a gym and how to prepare a basic meal, but they also focus on helping you fix your own mindset, develop positive habits, and really change your life one step at a time.
+                        A self-described community of “underdogs, misfits, and mutants” ready and willing to help people with every step of their fitness journey, Nerd Fitness is a comprehensive resource that's motivating and inspiring. Sure, they'll teach you how to work out without a gym and how to prepare a basic meal, but they also focus on helping you fix your own mindset, develop positive habits, and really change your life one step at a time.
                     </p>
 
                   </div>
@@ -123,7 +108,7 @@
                       class="blog_img"
                     />
                     <p class="blog_content">
-                        Ross Enamait’s website is dedicated to high performance conditioning, strength, and athletic development. The longtime trainer and boxing coach understands that a successful fitness regimen boils down to finding what works for you. His blog is a great resource for information about different kinds of training — from fitness fundamentals to old-school workouts like jumping rope to philosophical riffs on mental endurance.
+                        Ross Enamait's website is dedicated to high performance conditioning, strength, and athletic development. The longtime trainer and boxing coach understands that a successful fitness regimen boils down to finding what works for you. His blog is a great resource for information about different kinds of training — from fitness fundamentals to old-school workouts like jumping rope to philosophical riffs on mental endurance.
                     </p>
                   </div>
                 </td>
@@ -137,7 +122,7 @@
                       class="blog_img"
                     />
                     <p class="blog_content">
-                        Katie Dunlop’s Love Sweat Fitness community inspires women everywhere to find their own healthy, happy bodies. While the website features daily workouts, recipes, community forums, and much more, the blog is where Katie shares content like her own healthy spring morning routine, the biggest weight loss mistake you may be making, weekly workout schedules, and her latest sweat babe crush
+                        Katie Dunlop's Love Sweat Fitness community inspires women everywhere to find their own healthy, happy bodies. While the website features daily workouts, recipes, community forums, and much more, the blog is where Katie shares content like her own healthy spring morning routine, the biggest weight loss mistake you may be making, weekly workout schedules, and her latest sweat babe crush
                     </p>
                   </div>
                 </td>
@@ -152,7 +137,7 @@
                       class="blog_img"
                     />
                     <p class="blog_content">
-                        Designed for fitness consumers and professionals, Breaking Muscle is a leading publisher of timely, quality information about all things fitness and nutrition. In addition to countless workouts and recipes, there’s content geared specifically to coaches and trainers. Check out podcasts and thought-provoking posts written by the blog’s coaches in residence.
+                        Designed for fitness consumers and professionals, Breaking Muscle is a leading publisher of timely, quality information about all things fitness and nutrition. In addition to countless workouts and recipes, there's content geared specifically to coaches and trainers. Check out podcasts and thought-provoking posts written by the blog's coaches in residence.
                     </p>
                   </div>
                 </td>
@@ -180,7 +165,7 @@
                       class="blog_img"
                     />
                     <p class="blog_content">
-                        Tony Gentilcore is a trainer and co-founder of Cressey Sports Performance, a fitness training facility “by athletes for athletes.” His focus is largely on weightlifting. He jokes that he’s a pro at “picking things up and putting them down again.” On his blog, Tony shares insightful and often humorous posts about everything from deadlift warmups and workouts to make you leaner to fitness marketing 101 and important things every coach should know.
+                        Tony Gentilcore is a trainer and co-founder of Cressey Sports Performance, a fitness training facility “by athletes for athletes.” His focus is largely on weightlifting. He jokes that he's a pro at “picking things up and putting them down again.” On his blog, Tony shares insightful and often humorous posts about everything from deadlift warmups and workouts to make you leaner to fitness marketing 101 and important things every coach should know.
                     </p>
                   </div>
                 </td>

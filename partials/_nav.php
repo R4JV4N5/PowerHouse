@@ -114,10 +114,8 @@
     <?php if($_SESSION['loggedin']){
                     echo '<li class="nav-item">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" style="margin-right: 2.5em; margin-left: 1em">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPo5Ws8LxZvnKr4hMGOSZr9N9uMceAuBnZkIZM9rNSXs-QAMoKoxOIsMGxFiN66_jgF-4&usqp=CAU"
-                                alt="" class="profile_img" />';
+                        <button class="btn btn-secondary dropdown-toggle my-1" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="margin-right: 2.5em; margin-left: 1em">';
                             echo $fname;
                         echo '</button>
                         <ul class="dropdown-menu">
