@@ -134,17 +134,24 @@
 }  
 
 .count{
-    font-size: 9em;
+    font-size: 1.5em;
 }
 
 .num_container{
     position: relative;
     background-color: rgba(0, 0, 0, 0.548);
-    width: 40em;
+    width: fit-content;
+    padding: 1em;
     margin-top: 5em;
+    margin-bottom: 5em;
     border-radius: 5em;
 }
 .count{
     font-family: "bungee";
     color: white;
+}
+
+
+.promo_video{
+  background-color: white;
 }
