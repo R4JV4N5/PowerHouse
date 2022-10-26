@@ -12,6 +12,7 @@
     <h1>hey</h1>
 
     <script type="text/javascript">
+        console.log()
 
         function show_notification(){
             const notification= new Notification(' hey <name>',{
@@ -19,7 +20,7 @@
 
             });
         }
-         Notification.requestPermission();
+        //  Notification.requestPermission();
         // access permissions and checking
         if  (Notification.permission==="granted"){
             show_notification();

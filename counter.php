@@ -27,9 +27,7 @@
     require "partials/_adminNav.php";
   }
   ?>
-  <h1 style="height: 3em; width: 100%; background-color: black; color: white">
-    bilibil
-  </h1>
+  
 
   <center>
     <div class="num_container">
