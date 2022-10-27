@@ -156,7 +156,7 @@ if($_SERVER["REQUEST_METHOD"]  == "POST"){
                         </tr>
                     </table>
 
-                    <form action="/html/classes.html">
+                    <form action="courses.php">
                         <button type="submit" class="explore_button">explore now</button>
                     </form>
                 </center>
