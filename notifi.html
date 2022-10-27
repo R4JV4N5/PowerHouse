@@ -1,10 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <h1>hey</h1>
+
+    <script type="text/javascript">
+        console.log()
+
         function show_notification(){
-            const notification= new Notification(' hey ',{
+            const notification= new Notification(' hey <name>',{
                 body:"<count> members are present in the gym"
 
             });
         }
-         Notification.requestPermission();
+        //  Notification.requestPermission();
         // access permissions and checking
         if  (Notification.permission==="granted"){
             show_notification();
@@ -20,3 +36,8 @@
 
 
         }
+
+    </script>
+    
+</body>
+</html>
