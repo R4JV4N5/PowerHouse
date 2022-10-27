@@ -53,6 +53,7 @@ body {
 
 .deals {
   margin-top: 10px;
+  text-align: left;
 }
 
 .singleprice h1 {
@@ -72,7 +73,7 @@ body {
 .deals h4 {
   font-style: 14px;
   font-weight: normal;
-  text-align: center;
+  text-align: left;
   color: #fff;
   line-height: 1;
 }
