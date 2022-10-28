@@ -100,7 +100,7 @@
                     <a class="nav-link text-light" href="blogs.php">Blogs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#">About Us</a>
+                    <a class="nav-link text-light" href="about.php">About Us</a>
                 </li>';?>
 
     <?php 

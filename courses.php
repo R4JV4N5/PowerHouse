@@ -38,7 +38,7 @@
                         <span> <i class="fas fa-calendar"></i> mon - sat </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
-                    <h3>weight lifting and diet planing classes</h3>
+                    <h3>Weight lifting classes</h3>
                     <a href="#" class="link-btn">read more</a>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                         <span> <i class="fas fa-calendar"></i> mon - sat </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
-                    <h3>weight lifting and diet planing classes</h3>
+                    <h3>Diet planning classes</h3>
                     <a href="#" class="link-btn">read more</a>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                         <span> <i class="fas fa-calendar"></i> mon - sat </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
-                    <h3>weight lifting and diet planing classes</h3>
+                    <h3>Post workout classes</h3>
                     <a href="#" class="link-btn">read more</a>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                         <span> <i class="fas fa-calendar"></i> mon - sat </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
-                    <h3>weight lifting and diet planing classes</h3>
+                    <h3>Warmup and streching classes</h3>
                     <a href="#" class="link-btn">read more</a>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                         <span> <i class="fas fa-calendar"></i> mon - sat </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
-                    <h3>weight lifting and diet planing classes</h3>
+                    <h3>Kickboxing classes</h3>
                     <a href="#" class="link-btn">read more</a>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                         <span> <i class="fas fa-calendar"></i> mon - sat </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
-                    <h3>weight lifting and diet planing classes</h3>
+                    <h3>CrossFit classes</h3>
                     <a href="#" class="link-btn">read more</a>
                 </div>
             </div>
