@@ -1,5 +1,6 @@
 <!-- <?php
       session_start();
+      error_reporting(0);
       include "partials/_dbconnect.php";
       $query = "select * from check_in";
       $data = mysqli_query($conn, $query);
@@ -31,7 +32,8 @@
 
   <center>
     <div class="num_container">
-      <div class="count">
+      <!-- <h3>Current Gym Occupancy</h3>-->
+      <div class="count" style="font-size: 7em;">
         <?php echo $total ?>
       </div>
     </div>
@@ -41,8 +43,7 @@
     <table style="padding: 0px;">
       <tr>
         <td width="50%">
-
-          <iframe width="580" height="335" src="https://www.youtube.com/embed/cJn8ElwDRhM" style="padding:5em;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="1000" height="667" src="https://www.youtube.com/embed/cJn8ElwDRhM" style="padding:5em;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </td>
         <td width="50%" style="font-family: 'poppins'; background:red; padding: 3em;">
           <h1>gym talks</h1>

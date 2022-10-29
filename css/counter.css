@@ -20,135 +20,23 @@
     padding-left: 15px;
   }
   
-  /* nav bar */
-  .nav_bar {
-    width: 100%;
-    height: 6em;
-    background-color: rgba(0, 0, 0, 0.481);
-    position: relative;
-    z-index: 1;
-  }
-  
-  .u_list {
-    display: inline;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  
-  .nav_items {
-    display: inline;
-    color: aliceblue;
-  }
-  
-  .nav_buttons {
-    margin-right: 3em;
-    width: fit-content;
-    height: fit-content;
-    float: right;
-  }
-  .m_logo,
-  .nav_buttons {
-    display: inline;
-  }
-  
-  .nav_items_inside {
-    font-family: 'Poppins', sans-serif;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 2px 2px 2px 2px;
-    margin-left: 15px;
-    font-size: 22px;
-  }
-  
-  .nav_items_inside:hover {
-    border-radius: 3px;
-    padding: 2px 2px 2px 2px;
-    background-color: yellow;
-    color: black;
-  }
-  
-  #sign_up_button:hover {
-    background-color: red;
-    color: black;
-  }
-  /* drop down */
-  /* drop down */
-  /* Dropdown Button */
-  .dropbtn {
-    font-family: 'Poppins', sans-serif;
-    color: aliceblue;
-    padding: 16px;
-    font-size: 22px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    font-family: 'Poppins', sans-serif;
-    color: aliceblue;
-    padding: 16px;
-    font-size: 22px;
-    border: none;
-    color: black;
-    /* padding: 12px 16px; */
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
-  
-  .profile_img{
-    height: 2em;
-    border-radius: 1em;
-
-}
-.dropbtn,.profile_img{
-    display: inline;
-}
-#u_drop{
-    width: fit-content;
-}  
-
+ 
 .count{
-    font-size: 1.5em;
+    font-size: 8em;
 }
 
 .num_container{
     position: relative;
     background-color: rgba(0, 0, 0, 0.548);
-    width: fit-content;
+    /* width: fit-content; */
     padding: 1em;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    border-radius: 5em;
+    margin: 5em;
+    border-radius: 0.5em;
 }
 .count{
     font-family: "bungee";
     color: white;
+    /* font-size: 8em; */
 }
 
 
