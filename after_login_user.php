@@ -56,7 +56,7 @@
                     The <span style="color: red; font-weight: 700;">pain</span> You feel today, Will be
                     your <span style="color: red; font-weight: 700;">Strength</span> tommorow
                 </h2>
-                <form action="html/member.html">
+                <form action="member.php">
                     <button type="submit" class="join_button">Get started</button>
                 </form>
                 <p class="Q_para">
@@ -89,7 +89,7 @@
                 </p>
             </div>
 
-            <form action="/html/login.html">
+            <form action="member.php">
                 <button type="submit" class="join_button">join now</button>
             </form>
         </center>
@@ -134,7 +134,7 @@
                         </tr>
                     </table>
 
-                    <form action="/html/classes.html">
+                    <form action="courses.php">
                         <button type="submit" class="explore_button">explore now
                         </button>
                     </form>
