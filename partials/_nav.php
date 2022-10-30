@@ -44,40 +44,40 @@
     <title>Document</title>
     <?php require "partials/bootstrap.html"; ?>
     <!-- font -->
-        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Economica&family=Staatliches&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Economica&family=Staatliches&display=swap"
         rel="stylesheet" />
 
     <!-- css -->
     <style>
-        .nav-link {
-            color: white;
-            border-radius: 0.5rem;
-            font-size: 1.25em;
-        }
+    .nav-link {
+        color: white;
+        border-radius: 0.5rem;
+        font-size: 1.25em;
+    }
 
-        .nav-link:hover {
-            background-color: orangered;
-        }
+    .nav-link:hover {
+        background-color: orangered;
+    }
 
-        .m_logo {
-            color: white;
-            font-size: 2rem;
-            font-family: "Bungee";
-            text-decoration: none;
-        }
+    .m_logo {
+        color: white;
+        font-size: 2rem;
+        font-family: "Bungee";
+        text-decoration: none;
+    }
 
-        .m_logo:hover {
-            color: white;
-        }
+    .m_logo:hover {
+        color: white;
+    }
 
-        .btn-primary {
-            background-color: orangered;
-        }
+    .btn-primary {
+        background-color: orangered;
+    }
 
-        .profile_img {
-            height: 2em;
-            border-radius: 1em;
-        }
+    .profile_img {
+        height: 2em;
+        border-radius: 1em;
+    }
     </style>
 </head>
 
@@ -130,7 +130,19 @@
     <?php echo '</ul>
         </div>
     </div>
-</nav>';?>
+</nav>';
+// if($showError){
+//     echo  '<div class="alert alert-danger alert-dismissible fade show text-center" role="alert" style = "margin-top: 5.75em; margin-bottom:0.2em;">
+//              Invalid credentials!
+//              <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="
+//              padding-left: 1em;
+//              border: 0px;
+//              background-color: #f8d7da;">
+//              <span aria-hidden="true">&times;</span>
+//              </button>
+//          </div>';
+//  }
+?>
 
     <?php
     include "_loginModal.php";

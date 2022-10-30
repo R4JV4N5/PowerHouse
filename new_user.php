@@ -1,4 +1,6 @@
 <?php
+  session_start();
+  error_reporting(0);
   // set todays date
   $month = date('m');
   $day = date('d');

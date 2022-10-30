@@ -85,7 +85,7 @@
             <table class="blogs_table">
               <tr>
                 <td>
-                  <div class="blog_contents">
+                  <div class="blog_contents text-center text-center">
                     <a href="http://www.nerdfitness.com/blog/" class="blog_heading">Nerd Fitness</a>
                     <img
                       src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/05/nerd_fitness_400x400.png?w=525"
@@ -100,7 +100,7 @@
                 </td>
 
                 <td>
-                  <div class="blog_contents">
+                  <div class="blog_contents text-center">
                     <a href="http://rosstraining.com/blog/" class="blog_heading">Ross training.com</a>
                     <img
                       src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/05/ross_training_400x400.png?w=315&h=840"
@@ -114,7 +114,7 @@
                 </td>
 
                 <td>
-                  <div class="blog_contents">
+                  <div class="blog_contents text-center">
                     <a href="https://lovesweatfitness.com/blog/" class="blog_heading">Love Sweat Fitness</a>
                     <img
                       src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/05/love_sweat_fitness_400x400.png?w=315&h=840"
@@ -129,7 +129,7 @@
               </tr>
               <tr>
                 <td>
-                  <div class="blog_contents">
+                  <div class="blog_contents text-center">
                     <a href="https://breakingmuscle.com/" class="blog_heading">Breaking Muscle</a>
                     <img
                       src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/05/breaking_muscle_400x400.png?w=315&h=840"
@@ -143,7 +143,7 @@
                 </td>
 
                 <td>
-                  <div  class="blog_contents">
+                  <div  class="blog_contents text-center">
                     <a href="https://www.advancedhumanperformance.com/blog" class="blog_heading" style="font-size: 1.7em;">Advanced Human Performance</a>
                     <img
                       src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/05/advanced_human_performance_400x400.png?w=315&h=840"
@@ -157,7 +157,7 @@
                 </td>
 
                 <td>
-                  <div class="blog_contents">
+                  <div class="blog_contents text-center">
                     <a href="http://tonygentilcore.com/blog/" class="blog_heading">Tony Gentilcore</a>
                     <img
                       src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/05/tony_gentilcore_400x400.png?w=315&h=840"

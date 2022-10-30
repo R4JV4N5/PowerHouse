@@ -19,8 +19,38 @@
   $doj = $row['date_join'];
   $doe = $row['date_end'];
 }
-
 ?>
+
+<?php
+
+session_start();
+if($_SERVER["REQUEST_METHOD"]  == "POST"){
+    include "_dbconnect.php";   
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $phno = $_POST['phno'];
+    $email = $_SESSION['email'];
+    $password = $_POST['password'];
+    $c_password = $_POST['c_password'];
+
+    if($password == $c_password){
+      $query = "UPDATE `register` SET `fname`='$fname',`lname`='$lname',`phno`='$phno', `password`='$password',`c_password`='$c_password' WHERE `email`='$email'";
+      $result = mysqli_query($conn, $query); 
+
+      if($result){
+        echo "Updated Successfully!";
+      }else
+      {
+        echo"Unsuccessful";
+      }
+    }else{
+        echo "Passwords don't match";   
+    } 
+  }
+  ?>
+
+
+
 
 <!DOCTYPE html> 
 <html lang="en">
@@ -64,7 +94,7 @@
             <div class="card mb-4">
                 <div class="card-header">Account Details</div>
                 <div class="card-body">
-                    <form action="partials/userUpdate.php" method="POST">
+                    <form action="profile.php" method="POST">
                       <p>* Please Note: In order to change your account email address, contact reception at PowerHouse.</p>
                         <!-- Form Row-->
                         <div class="row gx-3 mb-3">

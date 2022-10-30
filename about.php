@@ -14,6 +14,8 @@
 <body>
 
   <?php
+  session_start();
+  error_reporting(0);
   {
     require "partials/_nav.php";
   }

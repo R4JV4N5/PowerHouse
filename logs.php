@@ -51,6 +51,7 @@
     background-size: 100%;
     background-repeat: no-repeat;">
     <?php 
+      error_reporting(0);
     require "partials/_adminNav.php"
 ?>
 
