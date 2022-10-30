@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Economica&family=Staatliches&display=swap" rel="stylesheet" />
 </head>
 
-<body style="background-image: url('counter.jpg');
+<body style="background-image: url('images/counter.jpg');
     background-size: 100%;
     background-repeat: no-repeat;">
   <?php

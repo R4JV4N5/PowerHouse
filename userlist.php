@@ -4,7 +4,7 @@
     <title>Gym User List</title>
     <style>
     table {
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.7);
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5%;
