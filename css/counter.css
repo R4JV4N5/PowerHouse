@@ -4,9 +4,6 @@
   }
   body {
     margin: auto;
-    background-image: url("/images/counter.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
   }
   
   .m_logo {
@@ -30,13 +27,18 @@
     background-color: rgba(0, 0, 0, 0.548);
     /* width: fit-content; */
     padding: 1em;
-    margin: 5em;
+    margin: 8em;
     border-radius: 0.5em;
+}
+
+.num_container h3{
+  font-weight: 800;
+  color: white;
+
 }
 .count{
     font-family: "bungee";
     color: white;
-    /* font-size: 8em; */
 }
 
 

@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerHouse - Logs</title>
     <style>
-    table.main {
+    table {
+        background-color: rgba(0, 0, 0, 0.4);;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
+        margin-bottom: 5%;
     }
-
+    
     th {
         padding: 15px;
     }
@@ -22,22 +23,40 @@
         padding: 1em;
     }
     .CheckIn{
+        color: black;
+        border-bottom: solid black 1px;
         border-radius: 0.5em;
         background-color: #8FFFBA;
     }
     .CheckOut{
+        color: black;
+        border-bottom: solid black 1px;
         border-radius: 0.5em;
         background-color: #FF8F91;
+    }
+
+    .main{
+        margin-top: 5%;
+        color: white;
+    }
+
+    .main h3{
+        font-weight: 800;
+        margin-bottom: 1em;
     }
     </style>
 </head>
 
-<body>
+<body style="background-image: url('images/counter_bg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;">
     <?php 
     require "partials/_adminNav.php"
 ?>
 
-    <table class='main' border='2'>
+<div class="main">
+<h3 class="text-center">LOGS</h3>
+    <table border='2'>
         <tr style="text-align: center; border-bottom: 1px solid black;">
             <th>Name</th>
             <th>Email Address</th>
@@ -67,6 +86,8 @@
             }
         ?>
     </table>
+</div>    
+
 </body>
 
 </html>

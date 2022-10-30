@@ -12,32 +12,6 @@
     $doe = $row['date_end'];
 ?>
 
-<?php
-if($_SERVER["REQUEST_METHOD"]  == "POST"){
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $phno = $_POST['phno'];
-    $age = $_POST['age'];
-    $email = $_POST['email'];
-    $gender = $_POST['gender'];
-    $password = $_POST['password'];
-    $c_password = $_POST['c_password']; 
-    $doj = date('Y-m-d', strtotime($_POST['date-join']));
-    $doe = date('Y-m-d', strtotime($_POST['date-end']));
-    
-
-    if(($password == $c_password) && $exists == false){
-      $query = "update register set(fname, lname, phno, age, email, gender, password, c_password, date_join, date_end) 
-        values('$fname', '$lname', '$phno', '$age', '$email', '$gender', '$password', '$c_password', '$doj', '$doe' )";
-      $result = mysqli_query($conn, $query); 
-
-      if($result){
-        $showAlert = true;
-      }
-    }    
-  }
-  ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,44 +32,41 @@ if($_SERVER["REQUEST_METHOD"]  == "POST"){
     <div class="card mb-4" style="margin-right:3em; margin-left:3em;">
         <div class="card-header">Account Details</div>
         <div class="card-body">
-            <form action="_updateModal.php" method="post">
+            <form action="partials/adminUpdate.php" method="post">
                 <!-- Form Group (username)-->
                 <!-- Form Row-->
                 <div class="row gx-3 mb-3">
                     <!-- Form Group (first name)-->
                     <div class="col-md-6">
                         <label class="small mb-1" for="inputFirstName">First name</label>
-                        <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name"
+                        <input class="form-control" id="inputFirstName" type="text" name="fname" placeholder="Enter your first name"
                             value=<?php echo $fname ?> />
                     </div>
                     <!-- Form Group (last name)-->
                     <div class="col-md-6">
                         <label class="small mb-1" for="inputLastName">Last name</label>
-                        <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name"
+                        <input class="form-control" id="inputLastName" type="text" name="lname" placeholder="Enter your last name"
                             value=<?php echo $lname ?> />
                     </div>
                 </div>
-                <!-- Form Row        -->
-                <!-- Form Group (email address)-->
-
                 <!-- Form Row-->
                 <div class="row gx-3 mb-3">
                     <div class="col-md-6">
-                        <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                        <input class="form-control" id="inputEmailAddress" type="email"
-                            placeholder="Enter your email address" value=<?php echo $email ?> disabled=disabled />
+                        <label class="small mb-1" for="email">Email address</label>
+                        <input class="form-control" id="email" type="email" name="email"
+                            placeholder="Enter your email address" value=<?php echo $email ?> />
                     </div>
                     <!-- Form Group (phone number)-->
                     <div class="col-md-6">
                         <label class="small mb-1" for="inputPhone">Phone number</label>
-                        <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number"
+                        <input class="form-control" id="inputPhone" type="tel" name="phno" placeholder="Enter your phone number"
                             value=<?php echo $phno ?> />
                     </div>
                 </div>
                 <div class="row gx-3 mb-3">
                     <div class="col-md-6">
                         <label class="small mb-1" for="date-join">Joining Date</label>
-                        <input class="form-control" type="date" id="date-join" name="date-end" value=<?php echo $doj ?>>
+                        <input class="form-control" type="date" id="date-join" name="date-join" value=<?php echo $doj ?>>
                     </div>
                     <div class="col-md-6">
                         <label class="small mb-1" for="date-end">Ending Date</label>
@@ -103,9 +74,7 @@ if($_SERVER["REQUEST_METHOD"]  == "POST"){
                     </div>
                 </div>
                 <!-- Save changes button-->
-                <button class="btn btn-primary" type="button">
-                    Save changes
-                </button>
+                <input class="btn btn-primary" type="submit" value="Save Changes" name="submit"/>
             </form>
         </div>
     </div>

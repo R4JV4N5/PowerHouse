@@ -20,7 +20,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Economica&family=Staatliches&display=swap" rel="stylesheet" />
 </head>
 
-<body>
+<body style="background-image: url('counter.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;">
   <?php
   if (isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true) {
     require "partials/_nav.php";
@@ -32,14 +34,14 @@
 
   <center>
     <div class="num_container">
-      <!-- <h3>Current Gym Occupancy</h3>-->
+      <h3>CURRENT GYM OCCUPANCY</h3>
       <div class="count" style="font-size: 7em;">
         <?php echo $total ?>
       </div>
     </div>
   </center>
 
-  <div class="promo_video">
+  <!-- <div class="promo_video">
     <table style="padding: 0px;">
       <tr>
         <td width="50%">
@@ -56,7 +58,7 @@
         </td>
       </tr>
     </table>
-  </div>
+  </div> -->
 </body>
 
 </html>
