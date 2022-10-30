@@ -35,7 +35,7 @@
                 </div>
                 <div class="content">
                     <div class="icons">
-                        <span> <i class="fas fa-calendar"></i> mon - sat </span>
+                        <span> <i class="fas fa-calendar"></i> monday </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
                     <h3>Weight lifting classes</h3>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="content">
                     <div class="icons">
-                        <span> <i class="fas fa-calendar"></i> mon - sat </span>
+                        <span> <i class="fas fa-calendar"></i> tuesday </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
                     <h3>Diet planning classes</h3>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="content">
                     <div class="icons">
-                        <span> <i class="fas fa-calendar"></i> mon - sat </span>
+                        <span> <i class="fas fa-calendar"></i> wednesday </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
                     <h3>Post workout classes</h3>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="content">
                     <div class="icons">
-                        <span> <i class="fas fa-calendar"></i> mon - sat </span>
+                        <span> <i class="fas fa-calendar"></i> thursday </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
                     <h3>Warmup and streching classes</h3>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="content">
                     <div class="icons">
-                        <span> <i class="fas fa-calendar"></i> mon - sat </span>
+                        <span> <i class="fas fa-calendar"></i> friday </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
                     <h3>Kickboxing classes</h3>
@@ -100,12 +100,37 @@
                 </div>
                 <div class="content">
                     <div class="icons">
-                        <span> <i class="fas fa-calendar"></i> mon - sat </span>
+                        <span> <i class="fas fa-calendar"></i> saturday </span>
                         <span> <i class="fas fa-clock"></i> 1 hours </span>
                     </div>
                     <h3>CrossFit classes</h3>
                 </div>
             </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> sunday </span>
+                        <span> <i class="fas fa-clock"></i> 1 hours </span>
+                    </div>
+                    <h3>Calesthethics</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icons">
+                        <span> <i class="fas fa-calendar"></i> sunday </span>
+                        <span> <i class="fas fa-clock"></i> 1 hours </span>
+                    </div>
+                    <h3>power yoga classes</h3>
+                </div>
+            </div>
+            
 
         </div>
     </section>
