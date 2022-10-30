@@ -14,9 +14,7 @@
 <body>
 
   <?php
-  if (isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true) {
-    require "partials/_nav.php";
-  } else {
+  {
     require "partials/_nav.php";
   }
   ?>
